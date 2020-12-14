@@ -1,9 +1,6 @@
 use std::io::prelude::*;
 use std::net::TcpStream;
 use std::net::TcpListener;
-use std::fs;
-use std::thread;
-use std::time::Duration;
 use mini_web_server::ThreadPool;
 use std::time::{SystemTime, UNIX_EPOCH};
 
