@@ -13,6 +13,10 @@
 		0E06E7C42585B7E600012CAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E06E7C22585B7E600012CAE /* Main.storyboard */; };
 		0E06E7C62585B7E700012CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E06E7C52585B7E700012CAE /* Assets.xcassets */; };
 		0E06E7C92585B7E700012CAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E06E7C72585B7E700012CAE /* LaunchScreen.storyboard */; };
+		0E06E7D32585B94B00012CAE /* GWTimeCalibrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E7D22585B94B00012CAE /* GWTimeCalibrationManager.swift */; };
+		0E06E7D72585BA3A00012CAE /* GWGCDTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E7D62585BA3A00012CAE /* GWGCDTimer.swift */; };
+		0E06E7DA2585BA7900012CAE /* GWCountDownApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E7D92585BA7900012CAE /* GWCountDownApi.swift */; };
+		45C5DEC4D5C56383C88E3885 /* Pods_GWTimeCalibration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 584EC88266E07EBC3D20875C /* Pods_GWTimeCalibration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		0E06E7C52585B7E700012CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E06E7C82585B7E700012CAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E06E7CA2585B7E700012CAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E06E7D22585B94B00012CAE /* GWTimeCalibrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWTimeCalibrationManager.swift; sourceTree = "<group>"; };
+		0E06E7D62585BA3A00012CAE /* GWGCDTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWGCDTimer.swift; sourceTree = "<group>"; };
+		0E06E7D92585BA7900012CAE /* GWCountDownApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWCountDownApi.swift; sourceTree = "<group>"; };
+		23FCE2060053118FA008F7A1 /* Pods-GWTimeCalibration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWTimeCalibration.release.xcconfig"; path = "Target Support Files/Pods-GWTimeCalibration/Pods-GWTimeCalibration.release.xcconfig"; sourceTree = "<group>"; };
+		584EC88266E07EBC3D20875C /* Pods_GWTimeCalibration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GWTimeCalibration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A530E211EBDB825C0939C9 /* Pods-GWTimeCalibration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GWTimeCalibration.debug.xcconfig"; path = "Target Support Files/Pods-GWTimeCalibration/Pods-GWTimeCalibration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C5DEC4D5C56383C88E3885 /* Pods_GWTimeCalibration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				0E06E7BB2585B7E600012CAE /* GWTimeCalibration */,
 				0E06E7BA2585B7E600012CAE /* Products */,
+				9F9854C88E31F6D1448ED533 /* Pods */,
+				54EC4F623ACA8174300D9F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		0E06E7BB2585B7E600012CAE /* GWTimeCalibration */ = {
 			isa = PBXGroup;
 			children = (
+				0E06E7D12585B92C00012CAE /* GWTimeCalibration */,
 				0E06E7BC2585B7E600012CAE /* AppDelegate.swift */,
 				0E06E7BE2585B7E600012CAE /* SceneDelegate.swift */,
 				0E06E7C02585B7E600012CAE /* ViewController.swift */,
@@ -67,6 +81,34 @@
 			path = GWTimeCalibration;
 			sourceTree = "<group>";
 		};
+		0E06E7D12585B92C00012CAE /* GWTimeCalibration */ = {
+			isa = PBXGroup;
+			children = (
+				0E06E7D22585B94B00012CAE /* GWTimeCalibrationManager.swift */,
+				0E06E7D62585BA3A00012CAE /* GWGCDTimer.swift */,
+				0E06E7D92585BA7900012CAE /* GWCountDownApi.swift */,
+			);
+			path = GWTimeCalibration;
+			sourceTree = "<group>";
+		};
+		54EC4F623ACA8174300D9F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				584EC88266E07EBC3D20875C /* Pods_GWTimeCalibration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F9854C88E31F6D1448ED533 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94A530E211EBDB825C0939C9 /* Pods-GWTimeCalibration.debug.xcconfig */,
+				23FCE2060053118FA008F7A1 /* Pods-GWTimeCalibration.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E06E7CD2585B7E700012CAE /* Build configuration list for PBXNativeTarget "GWTimeCalibration" */;
 			buildPhases = (
+				88D7E2A755704C00D00EB5E7 /* [CP] Check Pods Manifest.lock */,
 				0E06E7B52585B7E600012CAE /* Sources */,
 				0E06E7B62585B7E600012CAE /* Frameworks */,
 				0E06E7B72585B7E600012CAE /* Resources */,
+				40457E2245B3CB93BFB2EFE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +176,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40457E2245B3CB93BFB2EFE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GWTimeCalibration/Pods-GWTimeCalibration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GWTimeCalibration/Pods-GWTimeCalibration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GWTimeCalibration/Pods-GWTimeCalibration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88D7E2A755704C00D00EB5E7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GWTimeCalibration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E06E7B52585B7E600012CAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0E06E7C12585B7E600012CAE /* ViewController.swift in Sources */,
+				0E06E7D32585B94B00012CAE /* GWTimeCalibrationManager.swift in Sources */,
+				0E06E7D72585BA3A00012CAE /* GWGCDTimer.swift in Sources */,
 				0E06E7BD2585B7E600012CAE /* AppDelegate.swift in Sources */,
+				0E06E7DA2585BA7900012CAE /* GWCountDownApi.swift in Sources */,
 				0E06E7BF2585B7E600012CAE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +372,7 @@
 		};
 		0E06E7CE2585B7E700012CAE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A530E211EBDB825C0939C9 /* Pods-GWTimeCalibration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +392,7 @@
 		};
 		0E06E7CF2585B7E700012CAE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23FCE2060053118FA008F7A1 /* Pods-GWTimeCalibration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
