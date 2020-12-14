@@ -22,8 +22,6 @@ fn handle_connection(mut stream: TcpStream) {
     let mut buffer = [0; 512];
     stream.read(&mut buffer).unwrap();
 
-    let get = b"GET / HTTP/1.1\r\n";
-
     let status_line = "HTTP/1.1 200 OK\r\n";
 
     let contents = format!("{{\"timestamp_ms\": {}}}", get_epoch_ms());
