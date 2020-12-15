@@ -1,8 +1,7 @@
 # GWTimeCalibration
 a time calibration implementation on iOS with Swift
 
-![screenshot](./screenshot.png)
-
+!![screenshot.png](https://i.loli.net/2020/12/15/nImUqhOgJs8piC9.png)
 ## 原理
     - 在 APP 启动、APP 从后台返回前台的时候，发送请求给服务器请求校准时间；
     - 服务器返回的毫秒级别的 Unix时间戳
